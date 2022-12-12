@@ -33,10 +33,13 @@ class TVTrack;
 class TVSurface : public TObject {
 public:
 
+   [[deprecated("GREPME_NOMODE KalTest overload without mode")]]
    virtual Int_t    CalcXingPointWith(const TVTrack  &hel,
                                             TVector3 &xx,
                                             Double_t &phi,
                                             Double_t  eps = 1.e-8) const;
+
+   [[deprecated("GREPME_MODE KalTest overload with mode")]]
    virtual Int_t    CalcXingPointWith(const TVTrack  &hel,
                                             TVector3 &xx,
                                             Double_t &phi,
